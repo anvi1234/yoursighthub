@@ -1834,14 +1834,24 @@ form#contact #map iframe {
 .fill-form .icon a {
   margin-top: 15px;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
+  text-wrap: wrap;
   color: #2a2a2a;
   transition: all .3s;
 }
 
 .fill-form .icon:hover a {
   color: #fe664e;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .fill-form .icon a {
+      margin-top: 10px;  /* Adjust margin for mobile */
+      font-size: 11px; 
+      text-wrap: wrap;  /* Smaller font size for mobile */
+  }
 }
 
 form#contact input {
