@@ -14,16 +14,7 @@
     <title>YourSightHub - India's Best App and Webiste Development Company</title>
 
     <!-- Bootstrap core CSS -->
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "mUk8vdOoA8JIwLF4l",
-  });
-})();
-</script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
@@ -549,7 +540,7 @@ https://templatemo.com/tm-568-digimedia
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <form id="contact-form" action="send_mail.php" method="post" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
+                      <form id="contact" action="send_mail.php" method="post" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
                         <input class="d-none" name="bot-field">
                       <fieldset>
                         <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
@@ -601,18 +592,6 @@ https://templatemo.com/tm-568-digimedia
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        emailjs.sendForm('service_l2flogc', 'template_5jzpd6u', this)
-            .then(function() {
-                alert('Email sent successfully!');
-            }, function(error) {
-                alert('Failed to send email: ' + JSON.stringify(error));
-            });
-    });
-</script>
 
 </body>
 </html>
